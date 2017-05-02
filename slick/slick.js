@@ -1986,7 +1986,7 @@
             if (_.slideCount < _.options.slidesToShow) {
                 _.$slideTrack.width("100%");
                  
-                _.$slideTrack.children('.slick-slide').width((100 / _.$slideTrack.children('.slick-slide').length) + "%");
+                _.$slideTrack.children('.slick-slide').width(Math.floor(100 / _.$slideTrack.children('.slick-slide').length) + "%");
             } else {
                 _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
 
